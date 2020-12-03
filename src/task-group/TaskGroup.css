@@ -1,0 +1,29 @@
+.task-group{
+    
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    min-width: 250px;
+    border: solid 2px rgb(5, 43, 33);
+    margin: 5px;
+    border-radius: 4px;
+    background-color: rgb(221, 226, 220);
+}
+.task-group-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+ 
+
+    
+}
+.task-group-title{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: darkslategray;
+   
+}

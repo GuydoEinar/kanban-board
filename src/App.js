@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+
+import Task from './task/Task'
+import TaskGroup from './task-group/TaskGroup'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+  <TaskGroup title="To-do" content= {[<Task />,<Task />]} />
+  <TaskGroup title="Do today" content= {[<Task />,<Task />]} />
+  <TaskGroup title="In progress" content= {[<Task />,<Task />]} />
+  <TaskGroup title="Done" content= {[<Task />,<Task />]} />
+    
     </div>
-  );
+  )
 }
 
 export default App;
